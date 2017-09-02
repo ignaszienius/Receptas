@@ -17,6 +17,14 @@ echo '</table>'	;
 echo "Visu ingridientu suma yra:" . $suma;
 
 checkwater($troskinys) {
+	$pup = $troskinys['pupeles'];
+	$h2o = $toskinys['vanduo'];
+
+	if($pup > $h2o) {
+		echo "Perdaug pupeliu, brolau. Pripilk daugiau vandens";
+	} else {
+		echo "viskas ok, vandens uztenka, gali toliau virt";
+	}
 	
 }
 
